@@ -14,6 +14,7 @@
 		8354C5B11A9F71CD002C6A79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8354C5AF1A9F71CD002C6A79 /* Main.storyboard */; };
 		8354C5BD1A9F71CD002C6A79 /* FreshBooks_TimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8354C5BC1A9F71CD002C6A79 /* FreshBooks_TimerTests.m */; };
 		8354C5C71A9F746D002C6A79 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8354C5C61A9F746D002C6A79 /* WebKit.framework */; };
+		835668251A9F8C6100E1A271 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 835668241A9F8C6100E1A271 /* Settings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		8354C5BB1A9F71CD002C6A79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8354C5BC1A9F71CD002C6A79 /* FreshBooks_TimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreshBooks_TimerTests.m; sourceTree = "<group>"; };
 		8354C5C61A9F746D002C6A79 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		835668241A9F8C6100E1A271 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				8354C5A41A9F71CD002C6A79 /* Info.plist */,
+				835668241A9F8C6100E1A271 /* Settings.plist */,
 				8354C5A81A9F71CD002C6A79 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -202,6 +205,7 @@
 			files = (
 				8354C5AE1A9F71CD002C6A79 /* Images.xcassets in Resources */,
 				8354C5B11A9F71CD002C6A79 /* Main.storyboard in Resources */,
+				835668251A9F8C6100E1A271 /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +414,7 @@
 				8354C5C21A9F71CD002C6A79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8354C5C31A9F71CD002C6A79 /* Build configuration list for PBXNativeTarget "FreshBooks TimerTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +423,7 @@
 				8354C5C51A9F71CD002C6A79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

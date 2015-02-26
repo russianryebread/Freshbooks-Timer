@@ -14,7 +14,16 @@
     [super viewDidLoad];
     
     [self loadCookies];
-    [_webView setMainFrameURL:@"https://farmsoftstudios.freshbooks.com/internal/timesheet/timer"];
+    
+    // Get custom URL
+    NSString *urlFromSettings;
+    NSString *commonDictionaryPath = [[NSBundle mainBundle] pathForResource:@"Settings" ofType:@"plist"];
+    if (commonDictionaryPath)  {
+        urlFromSettings = [[[NSDictionary alloc] initWithContentsOfFile:commonDictionaryPath] objectForKey:@"URL"];
+    }
+    
+    
+    [_webView setMainFrameURL:[NSString stringWithFormat:@"https://%@.freshbooks.com/internal/timesheet/timer", urlFromSettings]];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
