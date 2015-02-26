@@ -13,6 +13,7 @@
 		8354C5AE1A9F71CD002C6A79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8354C5AD1A9F71CD002C6A79 /* Images.xcassets */; };
 		8354C5B11A9F71CD002C6A79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8354C5AF1A9F71CD002C6A79 /* Main.storyboard */; };
 		8354C5BD1A9F71CD002C6A79 /* FreshBooks_TimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8354C5BC1A9F71CD002C6A79 /* FreshBooks_TimerTests.m */; };
+		8354C5C71A9F746D002C6A79 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8354C5C61A9F746D002C6A79 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		8354C5B61A9F71CD002C6A79 /* FreshBooks TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FreshBooks TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8354C5BB1A9F71CD002C6A79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8354C5BC1A9F71CD002C6A79 /* FreshBooks_TimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreshBooks_TimerTests.m; sourceTree = "<group>"; };
+		8354C5C61A9F746D002C6A79 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8354C5C71A9F746D002C6A79 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		8354C5971A9F71CD002C6A79 = {
 			isa = PBXGroup;
 			children = (
+				8354C5C61A9F746D002C6A79 /* WebKit.framework */,
 				8354C5A21A9F71CD002C6A79 /* FreshBooks Timer */,
 				8354C5B91A9F71CD002C6A79 /* FreshBooks TimerTests */,
 				8354C5A11A9F71CD002C6A79 /* Products */,
@@ -334,6 +338,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "FreshBooks Timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -345,6 +350,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "FreshBooks Timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
