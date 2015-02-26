@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8354C5A71A9F71CD002C6A79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8354C5A61A9F71CD002C6A79 /* AppDelegate.m */; };
+		8354C5A91A9F71CD002C6A79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8354C5A81A9F71CD002C6A79 /* main.m */; };
+		8354C5AC1A9F71CD002C6A79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8354C5AB1A9F71CD002C6A79 /* ViewController.m */; };
+		8354C5AE1A9F71CD002C6A79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8354C5AD1A9F71CD002C6A79 /* Images.xcassets */; };
+		8354C5B11A9F71CD002C6A79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8354C5AF1A9F71CD002C6A79 /* Main.storyboard */; };
+		8354C5BD1A9F71CD002C6A79 /* FreshBooks_TimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8354C5BC1A9F71CD002C6A79 /* FreshBooks_TimerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8354C5B71A9F71CD002C6A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8354C5981A9F71CD002C6A79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8354C59F1A9F71CD002C6A79;
+			remoteInfo = "FreshBooks Timer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8354C5A01A9F71CD002C6A79 /* FreshBooks Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreshBooks Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8354C5A41A9F71CD002C6A79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8354C5A51A9F71CD002C6A79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8354C5A61A9F71CD002C6A79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8354C5A81A9F71CD002C6A79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8354C5AA1A9F71CD002C6A79 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8354C5AB1A9F71CD002C6A79 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8354C5AD1A9F71CD002C6A79 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8354C5B01A9F71CD002C6A79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8354C5B61A9F71CD002C6A79 /* FreshBooks TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FreshBooks TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8354C5BB1A9F71CD002C6A79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8354C5BC1A9F71CD002C6A79 /* FreshBooks_TimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreshBooks_TimerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8354C59D1A9F71CD002C6A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8354C5B31A9F71CD002C6A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8354C5971A9F71CD002C6A79 = {
+			isa = PBXGroup;
+			children = (
+				8354C5A21A9F71CD002C6A79 /* FreshBooks Timer */,
+				8354C5B91A9F71CD002C6A79 /* FreshBooks TimerTests */,
+				8354C5A11A9F71CD002C6A79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8354C5A11A9F71CD002C6A79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8354C5A01A9F71CD002C6A79 /* FreshBooks Timer.app */,
+				8354C5B61A9F71CD002C6A79 /* FreshBooks TimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8354C5A21A9F71CD002C6A79 /* FreshBooks Timer */ = {
+			isa = PBXGroup;
+			children = (
+				8354C5A51A9F71CD002C6A79 /* AppDelegate.h */,
+				8354C5A61A9F71CD002C6A79 /* AppDelegate.m */,
+				8354C5AA1A9F71CD002C6A79 /* ViewController.h */,
+				8354C5AB1A9F71CD002C6A79 /* ViewController.m */,
+				8354C5AD1A9F71CD002C6A79 /* Images.xcassets */,
+				8354C5AF1A9F71CD002C6A79 /* Main.storyboard */,
+				8354C5A31A9F71CD002C6A79 /* Supporting Files */,
+			);
+			path = "FreshBooks Timer";
+			sourceTree = "<group>";
+		};
+		8354C5A31A9F71CD002C6A79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8354C5A41A9F71CD002C6A79 /* Info.plist */,
+				8354C5A81A9F71CD002C6A79 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8354C5B91A9F71CD002C6A79 /* FreshBooks TimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8354C5BC1A9F71CD002C6A79 /* FreshBooks_TimerTests.m */,
+				8354C5BA1A9F71CD002C6A79 /* Supporting Files */,
+			);
+			path = "FreshBooks TimerTests";
+			sourceTree = "<group>";
+		};
+		8354C5BA1A9F71CD002C6A79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8354C5BB1A9F71CD002C6A79 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8354C59F1A9F71CD002C6A79 /* FreshBooks Timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8354C5C01A9F71CD002C6A79 /* Build configuration list for PBXNativeTarget "FreshBooks Timer" */;
+			buildPhases = (
+				8354C59C1A9F71CD002C6A79 /* Sources */,
+				8354C59D1A9F71CD002C6A79 /* Frameworks */,
+				8354C59E1A9F71CD002C6A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FreshBooks Timer";
+			productName = "FreshBooks Timer";
+			productReference = 8354C5A01A9F71CD002C6A79 /* FreshBooks Timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8354C5B51A9F71CD002C6A79 /* FreshBooks TimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8354C5C31A9F71CD002C6A79 /* Build configuration list for PBXNativeTarget "FreshBooks TimerTests" */;
+			buildPhases = (
+				8354C5B21A9F71CD002C6A79 /* Sources */,
+				8354C5B31A9F71CD002C6A79 /* Frameworks */,
+				8354C5B41A9F71CD002C6A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8354C5B81A9F71CD002C6A79 /* PBXTargetDependency */,
+			);
+			name = "FreshBooks TimerTests";
+			productName = "FreshBooks TimerTests";
+			productReference = 8354C5B61A9F71CD002C6A79 /* FreshBooks TimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8354C5981A9F71CD002C6A79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "FarmSoft Studios";
+				TargetAttributes = {
+					8354C59F1A9F71CD002C6A79 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					8354C5B51A9F71CD002C6A79 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 8354C59F1A9F71CD002C6A79;
+					};
+				};
+			};
+			buildConfigurationList = 8354C59B1A9F71CD002C6A79 /* Build configuration list for PBXProject "FreshBooks Timer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8354C5971A9F71CD002C6A79;
+			productRefGroup = 8354C5A11A9F71CD002C6A79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8354C59F1A9F71CD002C6A79 /* FreshBooks Timer */,
+				8354C5B51A9F71CD002C6A79 /* FreshBooks TimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8354C59E1A9F71CD002C6A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8354C5AE1A9F71CD002C6A79 /* Images.xcassets in Resources */,
+				8354C5B11A9F71CD002C6A79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8354C5B41A9F71CD002C6A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8354C59C1A9F71CD002C6A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8354C5AC1A9F71CD002C6A79 /* ViewController.m in Sources */,
+				8354C5A91A9F71CD002C6A79 /* main.m in Sources */,
+				8354C5A71A9F71CD002C6A79 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8354C5B21A9F71CD002C6A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8354C5BD1A9F71CD002C6A79 /* FreshBooks_TimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8354C5B81A9F71CD002C6A79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8354C59F1A9F71CD002C6A79 /* FreshBooks Timer */;
+			targetProxy = 8354C5B71A9F71CD002C6A79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8354C5AF1A9F71CD002C6A79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8354C5B01A9F71CD002C6A79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8354C5BE1A9F71CD002C6A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8354C5BF1A9F71CD002C6A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8354C5C11A9F71CD002C6A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "FreshBooks Timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8354C5C21A9F71CD002C6A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "FreshBooks Timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8354C5C41A9F71CD002C6A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FreshBooks TimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshBooks Timer.app/Contents/MacOS/FreshBooks Timer";
+			};
+			name = Debug;
+		};
+		8354C5C51A9F71CD002C6A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FreshBooks TimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshBooks Timer.app/Contents/MacOS/FreshBooks Timer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8354C59B1A9F71CD002C6A79 /* Build configuration list for PBXProject "FreshBooks Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8354C5BE1A9F71CD002C6A79 /* Debug */,
+				8354C5BF1A9F71CD002C6A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8354C5C01A9F71CD002C6A79 /* Build configuration list for PBXNativeTarget "FreshBooks Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8354C5C11A9F71CD002C6A79 /* Debug */,
+				8354C5C21A9F71CD002C6A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8354C5C31A9F71CD002C6A79 /* Build configuration list for PBXNativeTarget "FreshBooks TimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8354C5C41A9F71CD002C6A79 /* Debug */,
+				8354C5C51A9F71CD002C6A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8354C5981A9F71CD002C6A79 /* Project object */;
+}
