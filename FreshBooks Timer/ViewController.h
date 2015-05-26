@@ -12,6 +12,7 @@
 @interface ViewController : NSViewController
 
 @property (weak) IBOutlet WebView *webView;
+@property (strong, nonatomic) NSString *badgeContents;
 
 @end
 

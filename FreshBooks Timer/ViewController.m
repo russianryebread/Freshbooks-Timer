@@ -24,6 +24,7 @@
     
     
     [_webView setMainFrameURL:[NSString stringWithFormat:@"https://%@.freshbooks.com/internal/timesheet/timer", urlFromSettings]];
+    
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -34,15 +35,15 @@
 
 - (void)saveCookies
 {
-    NSData         *cookiesData = [NSKeyedArchiver archivedDataWithRootObject: [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]];
-    NSUserDefaults *defaults    = [NSUserDefaults standardUserDefaults];
+    NSData *cookiesData = [NSKeyedArchiver archivedDataWithRootObject: [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject: cookiesData forKey:@"cookies"];
     [defaults synchronize];
 }
 
 - (void)loadCookies
 {
-    NSArray             *cookies       = [NSKeyedUnarchiver unarchiveObjectWithData: [[NSUserDefaults standardUserDefaults] objectForKey: @"cookies"]];
+    NSArray *cookies  = [NSKeyedUnarchiver unarchiveObjectWithData: [[NSUserDefaults standardUserDefaults] objectForKey: @"cookies"]];
     NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
     
     for (NSHTTPCookie *cookie in cookies) {
@@ -50,8 +51,53 @@
     }
 }
 
+- (void) loadSavedInfo {
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] init];
+    
+    NSString *userName = ([[userDefaults objectForKey:@"username"] length]) ? [userDefaults objectForKey:@"username"] : @"";
+    NSString *password = [[userDefaults objectForKey:@"password"] length] ? [userDefaults objectForKey:@"password"] : @"";
+    
+    [_webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.getElementById('username').value = '%@'; document.getElementById('password').value = '%@';", userName, password]];
+    
+//    if([userName length] && [password length])
+//        [self login];
+    
+    // Set dock update.
+    [NSTimer scheduledTimerWithTimeInterval: 1.0
+                                     target: self
+                                   selector: @selector(getTime)
+                                   userInfo: nil
+                                    repeats: YES];
+}
+
+- (void) login {
+    [_webView stringByEvaluatingJavaScriptFromString:@"document.getElementById('form_login').submit()"];
+}
+
+-(void) getTime {
+    NSString *hours = [_webView stringByEvaluatingJavaScriptFromString:@"document.getElementById('timer-clock-hours').innerHTML"];
+    NSString *minutes = [_webView stringByEvaluatingJavaScriptFromString:@"document.getElementById('timer-clock-minutes').innerHTML"];
+    NSString *seconds = [_webView stringByEvaluatingJavaScriptFromString:@"document.getElementById('timer-clock-seconds').innerHTML"];
+    
+    NSString *dockLabel = [NSString stringWithFormat:@"%@:%@:%@", hours, minutes, seconds];
+    
+    // Hours
+    //NSString *hours = [_webView stringByEvaluatingJavaScriptFromString:@"document.getElementById('hours').value"];
+    
+    if(![dockLabel isEqualToString:_badgeContents]){
+        _badgeContents = dockLabel;
+        [[[NSApplication sharedApplication] dockTile]setBadgeLabel:_badgeContents];
+    }
+}
+
 -(void)viewDidDisappear {
     [self saveCookies];
+}
+
+# pragma mark - WebView Delegate Methods
+
+- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame {
+    [self loadSavedInfo];
 }
 
 @end

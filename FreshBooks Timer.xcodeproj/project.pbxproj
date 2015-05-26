@@ -15,6 +15,7 @@
 		8354C5BD1A9F71CD002C6A79 /* FreshBooks_TimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8354C5BC1A9F71CD002C6A79 /* FreshBooks_TimerTests.m */; };
 		8354C5C71A9F746D002C6A79 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8354C5C61A9F746D002C6A79 /* WebKit.framework */; };
 		835668251A9F8C6100E1A271 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 835668241A9F8C6100E1A271 /* Settings.plist */; };
+		835B96F81AAE06130017B385 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835B96F71AAE06130017B385 /* PreferencesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		8354C5BC1A9F71CD002C6A79 /* FreshBooks_TimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreshBooks_TimerTests.m; sourceTree = "<group>"; };
 		8354C5C61A9F746D002C6A79 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		835668241A9F8C6100E1A271 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		835B96F61AAE06130017B385 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
+		835B96F71AAE06130017B385 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				8354C5AB1A9F71CD002C6A79 /* ViewController.m */,
 				8354C5AD1A9F71CD002C6A79 /* Images.xcassets */,
 				8354C5AF1A9F71CD002C6A79 /* Main.storyboard */,
+				835B96F61AAE06130017B385 /* PreferencesViewController.h */,
+				835B96F71AAE06130017B385 /* PreferencesViewController.m */,
 				8354C5A31A9F71CD002C6A79 /* Supporting Files */,
 			);
 			path = "FreshBooks Timer";
@@ -226,6 +231,7 @@
 				8354C5AC1A9F71CD002C6A79 /* ViewController.m in Sources */,
 				8354C5A91A9F71CD002C6A79 /* main.m in Sources */,
 				8354C5A71A9F71CD002C6A79 /* AppDelegate.m in Sources */,
+				835B96F81AAE06130017B385 /* PreferencesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
