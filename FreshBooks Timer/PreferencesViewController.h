@@ -11,7 +11,7 @@
 @interface PreferencesViewController : NSViewController <NSTextFieldDelegate>
 @property (weak) IBOutlet NSTextField *userName;
 @property (weak) IBOutlet NSSecureTextField *password;
-@property (strong) IBOutlet NSView *view;
+//@property (strong) IBOutlet NSView *view;
 
 
 - (IBAction)closeWindow:(id)sender;

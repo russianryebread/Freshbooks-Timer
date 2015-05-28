@@ -84,9 +84,11 @@
     // Hours
     //NSString *hours = [_webView stringByEvaluatingJavaScriptFromString:@"document.getElementById('hours').value"];
     
-    if(![dockLabel isEqualToString:_badgeContents]){
+    if([dockLabel isEqualToString:@"00:00:00"]){
+        [[[NSApplication sharedApplication] dockTile] setBadgeLabel:nil];
+    } else if (![dockLabel isEqualToString:_badgeContents]){
         _badgeContents = dockLabel;
-        [[[NSApplication sharedApplication] dockTile]setBadgeLabel:_badgeContents];
+        [[[NSApplication sharedApplication] dockTile] setBadgeLabel:_badgeContents];
     }
 }
 
